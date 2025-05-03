@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | ellko.pro</title>
+    <meta name="description" content="Kontaktirajte ellko.pro za sve vaše potrebe. Naš tim je tu da vam pomogne.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/img/ellco-logo.png" alt="ellko.pro logo">
+                <span>ellko.pro</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="index.html">Početna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ponuda/">Paketi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industrije/">Industrije</a>
+                </li>
+                <li class="nav-item">
+                    <a href="usluge.html">Usluge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="active">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="form-container">
+                <h1>Kontaktirajte nas</h1>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ime i prezime</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Poruka</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Pošalji poruku</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: info@ellko.pro</p>
+                    <p>Telefon: +381 60 123 4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Pratite nas</h4>
+                    <div class="social-links">
+                        <!-- Social ikonice -->
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Pravne informacije</h4>
+                    <a href="politika-privatnosti.html">Politika privatnosti</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ellko.pro. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
