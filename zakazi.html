@@ -97,6 +97,22 @@
         </section>
     </main>
 
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+381641687654" class="floating-button phone" aria-label="Pozovite nas">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="viber://chat?number=+381641687654" class="floating-button viber" aria-label="Viber">
+            <i class="fab fa-viber"></i>
+        </a>
+        <a href="https://wa.me/381641687654" class="floating-button whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/+381641687654" class="floating-button telegram" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+    </div>
+
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
@@ -128,42 +144,10 @@
         </div>
     </footer>
 
+    <script src="assets/js/booking.js"></script>
     <script>
-        async function handleBookingSubmit(event) {
-            event.preventDefault();
-            
-            const form = event.target;
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-            
-            try {
-                const response = await fetch('/api/booking', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
-                
-                const result = await response.json();
-                
-                const messageDiv = document.getElementById('formMessage');
-                if (result.success) {
-                    messageDiv.className = 'form-message success';
-                    messageDiv.textContent = 'Sastanak je uspešno zakazan!';
-                    form.reset();
-                } else {
-                    messageDiv.className = 'form-message error';
-                    messageDiv.textContent = 'Došlo je do greške. Molimo pokušajte ponovo.';
-                }
-            } catch (error) {
-                const messageDiv = document.getElementById('formMessage');
-                messageDiv.className = 'form-message error';
-                messageDiv.textContent = 'Došlo je do greške. Molimo pokušajte ponovo.';
-            }
-            
-            return false;
-        }
+        document.getElementById('bookingForm').addEventListener('submit', handleBookingSubmit);
     </script>
+    
 </body>
 </html> 
