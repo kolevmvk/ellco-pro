@@ -435,6 +435,13 @@ body {
     transition: all 0.3s ease;
     z-index: 1;
 }
+.industry-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.681); /* ← ovo je zatamnjenje */
+    z-index: 1;
+}
 
 /* Aktivira se na hover */
 .industry-card:hover::after {
@@ -442,7 +449,6 @@ body {
     backdrop-filter: blur(3px);
 }
 
-/* Sadržaj ostaje iznad */
 .industry-card * {
     position: relative;
     z-index: 2;
@@ -481,7 +487,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin: 3rem;
+    margin: 1.5rem;
     
 }
 
@@ -489,12 +495,13 @@ body {
     .industries-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin-bottom: 2rem;
+        margin:0 1rem 2rem 1rem;
+    
     }
     
     .industry-card {
-        padding: 1.5rem;
-        margin: 0 2rem 0 2rem;
+        padding: 1rem;
+        margin: 0 1rem 0 1rem;
     }
     
     .industry-card img {
@@ -671,13 +678,17 @@ body {
     }
     
     .hero h1 {
-        font-size: 2rem!important;
+        font-size: 2.5rem!important;
         margin-bottom: 1.5rem;
         background: linear-gradient(to right, var(--color-white), var(--color-gold));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+    .hero p {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    }
 }
 
 
@@ -899,7 +910,7 @@ body {
 }
 
 .industry-card {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
