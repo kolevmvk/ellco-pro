@@ -2,97 +2,97 @@
 const testimonials = [
     {
         name: "Marko Petrović",
-        image: "assets/img/profpicy/profpic1.png",
+        image: "assets/img/profpicy/compressed/profpic1.png",
         rating: 5,
         text: "Odlična saradnja sa ellko.pro timom. Profesionalni pristup i brzi odgovori."
     },
     {
         name: "Ana Jovanović",
-        image: "assets/img/profpicy/fprofp7.jpeg",
+        image: "assets/img/profpicy/compressed/fprofp7.jpeg",
         rating: 5,
         text: "Sajt je napravljen prema svim mojim zahtevima. Preporučujem!"
     },
     {
         name: "Stefan Nikolić",
-        image: "assets/img/profpicy/fprof41.jpeg",
+        image: "assets/img/profpicy/compressed/fprof41.jpeg",
         rating: 4,
         text: "Dobro iskustvo, brzi i efikasni. Visegodisenje iskusstvo sa njima"
     },
     {
         name: "Jovana Đorđević",
-        image: "assets/img/profpicy/fprofp2.png",
+        image: "assets/img/profpicy/compressed/fprofp2.png",
         rating: 5,
         text: "Profesionalni tim, odličan dizajn. Dobra komunikacija i podrška."
     },
     {
         name: "Nikola Stojanović",
-        image: "assets/img/profpicy/mprof5.png",
+        image: "assets/img/profpicy/compressed/mprof5.png",
         rating: 5,
         text: "Najbolja digitalna agencija sa kojom sam radio."
     },
     {
         name: "Marija Popović",
-        image: "assets/img/profpicy/fprof4.png",
+        image: "assets/img/profpicy/compressed/fprof4.png",
         rating: 4,
         text: "Odlična komunikacija i brzi odgovori."
     },
     {
         name: "Aleksandar Miljković",
-        image: "assets/img/profpicy/profpic2.png",
+        image: "assets/img/profpicy/compressed/profpic2.png",
         rating: 5,
         text: "Profesionalni pristup i kvalitetan rad."
     },
     {
         name: "Teodora Simić",
-        image: "assets/img/profpicy/teodora.png",
+        image: "assets/img/profpicy/compressed/teodora.png",
         rating: 5,
         text: "Preporučujem svima koji žele kvalitetan sajt."
     },
     {
         name: "Luka Ristić",
-        image: "assets/img/profpicy/mprofp4.jpeg",
+        image: "assets/img/profpicy/compressed/mprofp4.jpeg",
         rating: 4,
         text: "Dobro iskustvo, zadovoljan sam rezultatom."
     },
     {
         name: "Sofija Pavlović",
-        image: "assets/img/profpicy/sofija.png",
+        image: "assets/img/profpicy/compressed/sofija.png",
         rating: 5,
         text: "Odlična saradnja, preporučujem!"
     },
     {
         name: "Filip Đorđević",
-        image: "assets/img/profpicy/filip.jpg",
+        image: "assets/img/profpicy/compressed/filip.jpg",
         rating: 5,
         text: "Profesionalni tim, kvalitetan rad."
     },
     {
         name: "Jelena Stanković",
-        image: "assets/img/profpicy/jelena.png",
+        image: "assets/img/profpicy/compressed/jelena.png",
         rating: 4,
         text: "Dobro iskustvo, brzi i efikasni."
     },
     {
         name: "Milan Jovanović",
-        image: "assets/img/profpicy/milan.png",
+        image: "assets/img/profpicy/compressed/milan.png",
         rating: 5,
         text: "Najbolja digitalna agencija sa kojom sam radio."
     },
     {
         name: "Nina Petrović",
-        image: "assets/img/profpicy/nina.png",
+        image: "assets/img/profpicy/compressed/nina.png",
         rating: 5,
         text: "Odlična komunikacija i brzi odgovori."
     },
     {
         name: "Stefan Simić",
-        image: "assets/img/profpicy/stefan.png",
+        image: "assets/img/profpicy/compressed/stefan.png",
         rating: 4,
         text: "Profesionalni pristup i kvalitetan rad."
     },
     {
         name: "Maja Ristić",
-        image: "assets/img/profpicy/maja.png",
+        image: "assets/img/profpicy/compressed/maja.png",
         rating: 5,
         text: "Preporučujem svima koji žele kvalitetan sajt."
     }

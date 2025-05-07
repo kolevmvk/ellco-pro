@@ -374,55 +374,55 @@ body {
     overflow: hidden;
 }
 .industry-card:nth-child(1) {
-    background-image: url('/assets/img/lepota1.png');
+    background-image: url('/assets/img/compressed/lepota1.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(2) {
-    background-image: url('/assets/img/mediscina1.png');
+    background-image: url('/assets/img/compressed/mediscina1.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(3) {
-    background-image: url('/assets/img/restoran1.png');
+    background-image: url('/assets/img/compressed/restoran1.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(4) {
-    background-image: url('/assets/img/school1.png');
+    background-image: url('/assets/img/compressed/school1.png');
     background-size: cover;
     
 }
 
 .industry-card:nth-child(5) {
-    background-image: url('/assets/img/gym1.png');
+    background-image: url('/assets/img/compressed/gym1.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(6) {
-    background-image: url('/assets/img/cardealer1.png');
+    background-image: url('/assets/img/compressed/cardealer1.png');
     background-size: cover;
 }
 
 
 .industry-card:nth-child(7) {
-    background-image: url('/assets/img/technologi1.png');
+    background-image: url('/assets/img/compressed/technologi1.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(8) {
-    background-image: url('/assets/img/enterior.png');
+    background-image: url('/assets/img/compressed/enterior.png');
     background-size: cover;
 }
 
 
 .industry-card:nth-child(9) {
-    background-image: url('/assets/img/pets.png');
+    background-image: url('/assets/img/compressed/pets.png');
     background-size: cover;
 }
 
 .industry-card:nth-child(10) {
-    background-image: url('/assets/img/realestate.png');
+    background-image: url('/assets/img/compressed/realestate.png');
     background-size: cover;
 }
 
