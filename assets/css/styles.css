@@ -145,6 +145,7 @@ body {
     transform: translateY(0);
 }
 
+
 .panel-content {
     max-width: 1400px;
     margin: 0 auto;
@@ -153,7 +154,20 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
 }
-
+.contact-info {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+ 
+}
 /* Social Icons */
 .header-social {
     display: flex;
@@ -351,6 +365,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    margin-bottom: 3rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     text-decoration: none;
@@ -358,11 +373,81 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
 }
-
-.industry-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.1);
+.industry-card:nth-child(1) {
+    background-image: url('/assets/img/lepota1.png');
+    background-size: cover;
 }
+
+.industry-card:nth-child(2) {
+    background-image: url('/assets/img/mediscina1.png');
+    background-size: cover;
+}
+
+.industry-card:nth-child(3) {
+    background-image: url('/assets/img/restoran1.png');
+    background-size: cover;
+}
+
+.industry-card:nth-child(4) {
+    background-image: url('/assets/img/school1.png');
+    background-size: cover;
+    
+}
+
+.industry-card:nth-child(5) {
+    background-image: url('/assets/img/gym1.png');
+    background-size: cover;
+}
+
+.industry-card:nth-child(6) {
+    background-image: url('/assets/img/cardealer1.png');
+    background-size: cover;
+}
+
+
+.industry-card:nth-child(7) {
+    background-image: url('/assets/img/technologi1.png');
+    background-size: cover;
+}
+
+.industry-card:nth-child(8) {
+    background-image: url('/assets/img/enterior.png');
+    background-size: cover;
+}
+
+
+.industry-card:nth-child(9) {
+    background-image: url('/assets/img/pets.png');
+    background-size: cover;
+}
+
+.industry-card:nth-child(10) {
+    background-image: url('/assets/img/realestate.png');
+    background-size: cover;
+}
+
+.industry-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+/* Aktivira se na hover */
+.industry-card:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+/* Sadržaj ostaje iznad */
+.industry-card * {
+    position: relative;
+    z-index: 2;
+}
+
 
 .industry-card img {
     width: 64px;
@@ -396,17 +481,20 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 3rem;
+    
 }
 
 @media (max-width: 768px) {
     .industries-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        margin-bottom: 2rem;
     }
     
     .industry-card {
         padding: 1.5rem;
+        margin: 0 2rem 0 2rem;
     }
     
     .industry-card img {
@@ -1268,19 +1356,21 @@ body {
 }
 
 .contact-info p {
+    font-size: x-large;
     margin: 0.5rem 0;
 }
 
 .social-icons {
+    font-size: x-large;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     filter: invert(1);
     transition: opacity 0.3s ease;
 }

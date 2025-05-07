@@ -2,97 +2,97 @@
 const testimonials = [
     {
         name: "Marko Petrović",
-        image: "https://i.pravatar.cc/150?img=1",
+        image: "assets/img/profpicy/profpic1.png",
         rating: 5,
         text: "Odlična saradnja sa ellko.pro timom. Profesionalni pristup i brzi odgovori."
     },
     {
         name: "Ana Jovanović",
-        image: "https://i.pravatar.cc/150?img=2",
+        image: "assets/img/profpicy/fprofp7.jpeg",
         rating: 5,
         text: "Sajt je napravljen prema svim mojim zahtevima. Preporučujem!"
     },
     {
         name: "Stefan Nikolić",
-        image: "https://i.pravatar.cc/150?img=3",
+        image: "assets/img/profpicy/fprof41.jpeg",
         rating: 4,
-        text: "Dobro iskustvo, brzi i efikasni."
+        text: "Dobro iskustvo, brzi i efikasni. Visegodisenje iskusstvo sa njima"
     },
     {
         name: "Jovana Đorđević",
-        image: "https://i.pravatar.cc/150?img=4",
+        image: "assets/img/profpicy/fprofp2.png",
         rating: 5,
-        text: "Profesionalni tim, odličan dizajn."
+        text: "Profesionalni tim, odličan dizajn. Dobra komunikacija i podrška."
     },
     {
         name: "Nikola Stojanović",
-        image: "https://i.pravatar.cc/150?img=5",
+        image: "assets/img/profpicy/mprof5.png",
         rating: 5,
         text: "Najbolja digitalna agencija sa kojom sam radio."
     },
     {
         name: "Marija Popović",
-        image: "https://i.pravatar.cc/150?img=6",
+        image: "assets/img/profpicy/fprof4.png",
         rating: 4,
         text: "Odlična komunikacija i brzi odgovori."
     },
     {
         name: "Aleksandar Miljković",
-        image: "https://i.pravatar.cc/150?img=7",
+        image: "assets/img/profpicy/profpic2.png",
         rating: 5,
         text: "Profesionalni pristup i kvalitetan rad."
     },
     {
         name: "Teodora Simić",
-        image: "https://i.pravatar.cc/150?img=8",
+        image: "assets/img/profpicy/teodora.png",
         rating: 5,
         text: "Preporučujem svima koji žele kvalitetan sajt."
     },
     {
         name: "Luka Ristić",
-        image: "https://i.pravatar.cc/150?img=9",
+        image: "assets/img/profpicy/mprofp4.jpeg",
         rating: 4,
         text: "Dobro iskustvo, zadovoljan sam rezultatom."
     },
     {
         name: "Sofija Pavlović",
-        image: "https://i.pravatar.cc/150?img=10",
+        image: "assets/img/profpicy/sofija.png",
         rating: 5,
         text: "Odlična saradnja, preporučujem!"
     },
     {
         name: "Filip Đorđević",
-        image: "https://i.pravatar.cc/150?img=11",
+        image: "assets/img/profpicy/filip.jpg",
         rating: 5,
         text: "Profesionalni tim, kvalitetan rad."
     },
     {
         name: "Jelena Stanković",
-        image: "https://i.pravatar.cc/150?img=12",
+        image: "assets/img/profpicy/jelena.png",
         rating: 4,
         text: "Dobro iskustvo, brzi i efikasni."
     },
     {
         name: "Milan Jovanović",
-        image: "https://i.pravatar.cc/150?img=13",
+        image: "assets/img/profpicy/milan.png",
         rating: 5,
         text: "Najbolja digitalna agencija sa kojom sam radio."
     },
     {
         name: "Nina Petrović",
-        image: "https://i.pravatar.cc/150?img=14",
+        image: "assets/img/profpicy/nina.png",
         rating: 5,
         text: "Odlična komunikacija i brzi odgovori."
     },
     {
         name: "Stefan Simić",
-        image: "https://i.pravatar.cc/150?img=15",
+        image: "assets/img/profpicy/stefan.png",
         rating: 4,
         text: "Profesionalni pristup i kvalitetan rad."
     },
     {
         name: "Maja Ristić",
-        image: "https://i.pravatar.cc/150?img=16",
+        image: "assets/img/profpicy/maja.png",
         rating: 5,
         text: "Preporučujem svima koji žele kvalitetan sajt."
     }
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        centeredSlides: false,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
