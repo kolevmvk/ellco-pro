@@ -321,7 +321,7 @@ body {
 
 .package-card #card-starter {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/starter1.png') center/cover;
+    url('../img/compressed/starter1.png') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -329,7 +329,7 @@ body {
 }
 .package-card #card-pro {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/pro.png') center/cover;
+    url('../img/compressed/pro.png') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -337,7 +337,7 @@ body {
 }
 .package-card #card-premium {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/premium.png') center/cover;
+    url('../img/compressed/premium.png') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -345,7 +345,7 @@ body {
 }
 .package-card #card-enterprise {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/enterprise.png') center/cover;
+    url('../img/compressed/enterprise.png') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -669,7 +669,7 @@ body {
         justify-content: center;
         text-align: center;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url('../img/hero-bg.jpg') center/cover;
+                    url('../img/compressed/hero-bg.jpg') center/cover;
     }
     
     .hero-content {
@@ -738,7 +738,7 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.453), rgba(0, 0, 0, 0.7)),
-                url('../img/hero-image-pro.png') center/cover;
+                url('../img/compressed/hero-image-pro.png') center/cover;
 }
 
 .hero-content {
