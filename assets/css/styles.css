@@ -321,7 +321,7 @@ body {
 
 .package-card #card-starter {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/starter1.png') center/cover;
+    url('../img/compressed/starter1.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -329,7 +329,7 @@ body {
 }
 .package-card #card-pro {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/pro.png') center/cover;
+    url('../img/compressed/pro.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -337,7 +337,7 @@ body {
 }
 .package-card #card-premium {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/premium.png') center/cover;
+    url('../img/compressed/premium.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -345,7 +345,7 @@ body {
 }
 .package-card #card-enterprise {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/enterprise.png') center/cover;
+    url('../img/compressed/enterprise.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -374,55 +374,55 @@ body {
     overflow: hidden;
 }
 .industry-card:nth-child(1) {
-    background-image: url('/assets/img/compressed/lepota1.png');
+    background-image: url('/assets/img/compressed/lepota1.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(2) {
-    background-image: url('/assets/img/compressed/mediscina1.png');
+    background-image: url('/assets/img/compressed/mediscina1.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(3) {
-    background-image: url('/assets/img/compressed/restoran1.png');
+    background-image: url('/assets/img/compressed/restoran1.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(4) {
-    background-image: url('/assets/img/compressed/school1.png');
+    background-image: url('/assets/img/compressed/school1.webp');
     background-size: cover;
     
 }
 
 .industry-card:nth-child(5) {
-    background-image: url('/assets/img/compressed/gym1.png');
+    background-image: url('/assets/img/compressed/gym1.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(6) {
-    background-image: url('/assets/img/compressed/cardealer1.png');
+    background-image: url('/assets/img/compressed/cardealer1.webp');
     background-size: cover;
 }
 
 
 .industry-card:nth-child(7) {
-    background-image: url('/assets/img/compressed/technologi1.png');
+    background-image: url('/assets/img/compressed/technologi1.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(8) {
-    background-image: url('/assets/img/compressed/enterior.png');
+    background-image: url('/assets/img/compressed/enterior.webp');
     background-size: cover;
 }
 
 
 .industry-card:nth-child(9) {
-    background-image: url('/assets/img/compressed/pets.png');
+    background-image: url('/assets/img/compressed/pets.webp');
     background-size: cover;
 }
 
 .industry-card:nth-child(10) {
-    background-image: url('/assets/img/compressed/realestate.png');
+    background-image: url('/assets/img/compressed/realestate.webp');
     background-size: cover;
 }
 
@@ -669,7 +669,7 @@ body {
         justify-content: center;
         text-align: center;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url('../img/compressed/hero-bg.jpg') center/cover;
+                    url('../img/compressed/hero-bg.webp') center/cover;
     }
     
     .hero-content {
@@ -738,7 +738,7 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.453), rgba(0, 0, 0, 0.7)),
-                url('../img/compressed/hero-image-pro.png') center/cover;
+                url('../img/compressed/hero-image-pro.webp') center/cover;
 }
 
 .hero-content {
