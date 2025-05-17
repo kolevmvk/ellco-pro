@@ -34,3 +34,4 @@ dist/
 build/
 *.zip
 .env
+/struktura-projekta/
