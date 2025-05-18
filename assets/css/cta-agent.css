@@ -1,0 +1,91 @@
+/* === CTA Agent Styles === */
+.cta-agent-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cta-agent-btn {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-agent-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+#cta-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+
+.cta-agent-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.cta-agent-icon:hover {
+  transform: scale(1.1);
+}
+
+.cta-agent-icon img {
+  width: 26px;
+  height: 26px;
+  filter: invert(1);
+}
+
+.hidden {
+  display: none !important;
+}
+.cta-actions-box {
+  position: relative;
+  padding: 1rem 2.5rem 1rem 1.5rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 20px;
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--color-gold);
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  line-height: 1;
+  padding: 4px;
+}
+
+.cta-close:hover {
+  color: white;
+}
