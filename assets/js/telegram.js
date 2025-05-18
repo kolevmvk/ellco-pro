@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('telegram-form');
   const status = document.getElementById('telegram-status');
   const submitBtn = form.querySelector('button');
+  const closeTelegram = document.getElementById('telegram-close');
+
+if (closeTelegram) {
+  closeTelegram.addEventListener('click', () => {
+    document.getElementById('telegram-agent-popup').style.display = 'none';
+  });
+}
+
 
   // Prikaz / skrivanje forme
   btn.addEventListener('click', () => {
@@ -44,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const res = await fetch('https://ellco-pro.vercel.app/api/telegram', {
+      const res = await fetch('/api/telegram', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)

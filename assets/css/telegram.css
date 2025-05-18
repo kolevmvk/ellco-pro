@@ -29,7 +29,8 @@
     height: 80%;
     object-fit: contain;
     pointer-events: none;
-    filter: invert(1); /* za dark background */
+    filter: invert(1);
+    /* za dark background */
 }
 
 /* === Pulse animation === */
@@ -37,9 +38,11 @@
     0% {
         box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
     }
+
     70% {
         box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
     }
@@ -103,6 +106,7 @@
     margin-top: 0.5rem;
     text-align: center;
 }
+
 input[name="hpot"] {
     position: absolute;
     left: -9999px;
@@ -112,6 +116,7 @@ input[name="hpot"] {
     opacity: 0;
     pointer-events: none;
 }
+
 #telegram-agent-popup button:disabled {
     background-color: #444 !important;
     color: #888 !important;
@@ -120,3 +125,19 @@ input[name="hpot"] {
     opacity: 0.6;
 }
 
+.popup-close {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: white;
+}
