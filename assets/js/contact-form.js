@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message').value.trim();
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://ellco-pro.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, message })
