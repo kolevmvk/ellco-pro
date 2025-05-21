@@ -1,30 +1,30 @@
-import { Resend } from 'resend';
+const { Resend } = require('resend');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    return res.status(405).json({ success: false, message: 'Method not allowed' });
+    return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
   const { name, email, phone, message } = req.body;
 
   try {
-    await resend.emails.send({
-      from: 'Ellco Kontakt <office@ellco.pro>',
+    const data = await resend.emails.send({
+      from: 'office@ellco.pro',
       to: 'office@ellco.pro',
-      subject: '📩 Nova poruka sa sajta',
+      subject: `Nova poruka sa sajta od ${name}`,
       html: `
         <p><strong>Ime:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Telefon:</strong> ${phone}</p>
         <p><strong>Poruka:</strong><br>${message}</p>
-      `
+      `,
     });
 
-    res.status(200).json({ success: true, message: 'Poruka je poslata!' });
+    return res.status(200).json({ message: 'Poruka uspešno poslata.' });
   } catch (error) {
-    console.error('Greška pri slanju mejla:', error);
-    res.status(500).json({ success: false, message: 'Slanje nije uspelo' });
+    console.error('Greška pri slanju:', error);
+    return res.status(500).json({ message: 'Došlo je do greške pri slanju.' });
   }
-}
+};
