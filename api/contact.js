@@ -1,4 +1,6 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -7,20 +9,10 @@ export default async function handler(req, res) {
 
   const { name, email, phone, message } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.zoho.eu',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS
-    }
-  });
-
   try {
-    await transporter.sendMail({
-      from: `"Ellco Kontakt" <${process.env.MAIL_USER}>`,
-      to: 'office@ellco.pro', // <-- tvoja meta adresa
+    await resend.emails.send({
+      from: 'Ellco Kontakt <office@ellco.pro>',
+      to: 'office@ellco.pro',
       subject: '📩 Nova poruka sa sajta',
       html: `
         <p><strong>Ime:</strong> ${name}</p>
