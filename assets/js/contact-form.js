@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const honeypot = document.getElementById('website').value.trim();
     const token = tokenField.value;
 
-    // Resetuj poruku
+    // Resetuj poruku i klase
     formMessage.innerText = '';
-    formMessage.style.color = '';
-    
+    formMessage.className = 'form-message';
+
     if (honeypot !== '') {
       formMessage.innerText = 'Spam detektovan.';
-      formMessage.style.color = 'red';
+      formMessage.classList.add('error');
       return;
     }
 
@@ -40,21 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const data = await res.json();
 
-      formMessage.innerText = data.message;
-
-      if (res.ok) {
-        formMessage.style.color = 'green';
+      if (res.ok && data.message.toLowerCase().includes('uspešno')) {
+        formMessage.innerText = data.message;
+        formMessage.classList.add('success');
         form.reset();
         if (tokenField) {
           tokenField.value = btoa(Date.now().toString()); // regeneriši token
         }
       } else {
-        formMessage.style.color = 'red';
+        formMessage.innerText = data.message || 'Greška pri slanju.';
+        formMessage.classList.add('error');
       }
 
     } catch (err) {
       formMessage.innerText = 'Greška pri slanju poruke.';
-      formMessage.style.color = 'red';
+      formMessage.classList.add('error');
       console.error(err);
     }
   });

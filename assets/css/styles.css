@@ -1385,3 +1385,18 @@ body {
     }
 } 
 
+.form-message {
+  padding: 0.5rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  background: none;
+}
+
+.form-message.success {
+  color: #28a745;
+}
+
+.form-message.error {
+  color: #dc3545;
+}
