@@ -1046,23 +1046,6 @@ body {
     transform: translateY(-2px);
 }
 
-.form-message {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.form-message.success {
-    background: rgba(40, 167, 69, 0.2);
-    color: #28a745;
-}
-
-.form-message.error {
-    background: rgba(220, 53, 69, 0.2);
-    color: #dc3545;
-}
 
 
 
@@ -1386,17 +1369,21 @@ body {
 } 
 
 .form-message {
-  padding: 0.5rem 0;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
   font-weight: 600;
   font-size: 1rem;
-  text-align: center;
   background: none;
 }
 
 .form-message.success {
+  background-color: rgba(40, 167, 69, 0.15);
   color: #28a745;
 }
 
 .form-message.error {
+  background-color: rgba(220, 53, 69, 0.15);
   color: #dc3545;
 }
