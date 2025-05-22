@@ -367,7 +367,7 @@
         </div>
         </div>
     </header>
-<!--Jebeni header-->
+    <!--Jebeni header-->
 
     <!-- Main Content -->
     <main class="page-content">
@@ -394,11 +394,20 @@
                     <button type="submit" class="btn-submit">Pošalji poruku</button>
                     <div id="formMessage" class="form-message"></div>
                 </form>
+                <!-- HONEYPOT: Nevidljivo polje za botove -->
+                <div style="display: none;">
+                    <label for="website">Ako ste robot, popunite ovo:</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
+
+                <!-- TOKEN: JS ga popunjava -->
+                <input type="hidden" id="formToken" name="formToken">
+
             </div>
         </div>
     </main>
 
- 
+
     <!-- Floating Buttons -->
     <div class="floating-buttons">
         <a href="tel:+381641687654" class="floating-button phone" aria-label="Pozovite nas">
@@ -419,7 +428,7 @@
     </div>
 
     <div id="telegram-agent-popup">
-         
+
         <form id="telegram-form">
             <h4>Kontaktirajte nas</h4>
 
