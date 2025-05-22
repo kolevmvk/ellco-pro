@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Resetuj poruku i klase
     formMessage.innerText = '';
-    formMessage.className = 'form-message';
     formMessage.classList.remove('success', 'error');
+    formMessage.className = 'form-message'; // zadrži baznu klasu
 
     if (honeypot !== '') {
       formMessage.innerText = 'Spam detektovan.';
