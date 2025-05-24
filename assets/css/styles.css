@@ -218,7 +218,9 @@ body {
     }
 
     .mobile-menu-toggle {
-        display: block;
+        display: block !important;
+        margin-left: auto !important;
+        
     }
 }
 
@@ -521,7 +523,7 @@ body {
 
 /* Mobile Menu */
 .mobile-menu {
-    position: fixed;
+    position: relative;
     top: 80px;
     left: 0;
     width: 100%;
@@ -614,7 +616,21 @@ body {
     padding: 0.5rem;
     z-index: 1001;
     position: relative;
+    margin-left: auto;
+    
 }
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  margin-left: auto;
+  order: 3;
+}
+
 
 .mobile-menu-toggle span {
     display: block;
