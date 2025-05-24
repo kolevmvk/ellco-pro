@@ -3,10 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const userData = req.body;
-
-  const prompt = `Na osnovu sledećih korisničkih odgovora: ${JSON.stringify(userData, null, 2)}
-predloži idealan web paket iz ponude ellco.pro.`;
+  const { prompt } = req.body;
 
   try {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -20,7 +17,7 @@ predloži idealan web paket iz ponude ellco.pro.`;
         messages: [
           {
             role: "system",
-            content: "Ti si AI asistent koji korisnicima predlaže odgovarajući web paket na osnovu njihovih potreba."
+            content: "Ti si AI asistent koji pomaže korisnicima oko izbora sajta i digitalnih rešenja."
           },
           {
             role: "user",
