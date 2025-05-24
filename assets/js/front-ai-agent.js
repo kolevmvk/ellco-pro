@@ -219,8 +219,6 @@ window.addEventListener('load', () => {
         addMessage(steps[currentStep].question);
         createInputElement(steps[currentStep]);
       } else {
-        const recommendation = generateRecommendation(userData);
-        addMessage(recommendation);
         const sendButton = document.createElement('button');
         sendButton.className = 'submit-btn';
         sendButton.textContent = 'Pošalji podatke';
@@ -243,6 +241,7 @@ window.addEventListener('load', () => {
     }
 
     async function sendData() {
+
       const sendButton = userReplyContainer.querySelector('.submit-btn');
       sendButton.disabled = true;
       sendButton.textContent = 'Slanje...';
@@ -252,17 +251,23 @@ window.addEventListener('load', () => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(userData)
         });
+
+        const data = await response.json();
+
         if (response.ok) {
-          addMessage('Hvala! Vaši podaci su uspešno poslati. Kontaktiraćemo vas uskoro.');
-          setTimeout(closePopup, 2000);
+          addMessage(data.reply);  // ← OVDE se prikazuje AI odgovor
+          setTimeout(closePopup, 4000);
         } else {
           throw new Error('Greška pri slanju');
         }
+
       } catch (error) {
         addMessage('Došlo je do greške. Molimo pokušajte ponovo.');
         sendButton.disabled = false;
         sendButton.textContent = 'Pošalji podatke';
       }
+
+
     }
 
     function closePopup() {
