@@ -909,7 +909,7 @@ body {
 .ai-humanoid {
     position: fixed;
     bottom: 90px;
-    left: 20px;
+    left: 22px !important;
     width: 60px;
     height: 60px;
     background: var(--ai-black);
