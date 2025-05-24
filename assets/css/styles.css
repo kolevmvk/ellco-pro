@@ -22,6 +22,7 @@ body {
     color: var(--color-white);
     line-height: 1.5;
 }
+
 .panel-content {
     animation: fadeSlideIn 0.5s ease forwards;
     opacity: 0;
@@ -34,8 +35,15 @@ body {
 }
 
 @keyframes fadeSlideIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -94,6 +102,7 @@ body {
     color: white;
     font-size: 1.8rem;
 }
+
 .logo span {
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -154,20 +163,23 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
 }
+
 .contact-info {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
- 
+
 }
+
 /* Social Icons */
 .header-social {
     display: flex;
@@ -213,14 +225,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .main-nav, .header-social {
+
+    .main-nav,
+    .header-social {
         display: none;
     }
 
     .mobile-menu-toggle {
         display: block !important;
         margin-left: auto !important;
-        
+
     }
 }
 
@@ -272,17 +286,20 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    
+
 }
+
 @media (max-width: 768px) {
     .packages-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  }
-  .package-content {
+}
+
+.package-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* sadržaj ide na dno slike */
+    justify-content: flex-end;
+    /* sadržaj ide na dno slike */
     align-items: center;
     height: 100%;
     padding: 2rem;
@@ -319,35 +336,38 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
- 
+
 
 .package-card #card-starter {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/starter1.webp') center/cover;
+        url('../img/compressed/starter1.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
+
 .package-card #card-pro {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/pro.webp') center/cover;
+        url('../img/compressed/pro.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
+
 .package-card #card-premium {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/premium.webp') center/cover;
+        url('../img/compressed/premium.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
+
 .package-card #card-enterprise {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/compressed/enterprise.webp') center/cover;
+        url('../img/compressed/enterprise.webp') center/cover;
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
@@ -375,6 +395,7 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
 }
+
 .industry-card:nth-child(1) {
     background-image: url('/assets/img/compressed/lepota1.webp');
     background-size: cover;
@@ -393,7 +414,7 @@ body {
 .industry-card:nth-child(4) {
     background-image: url('/assets/img/compressed/school1.webp');
     background-size: cover;
-    
+
 }
 
 .industry-card:nth-child(5) {
@@ -437,11 +458,13 @@ body {
     transition: all 0.3s ease;
     z-index: 1;
 }
+
 .industry-card::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.681); /* ← ovo je zatamnjenje */
+    background: rgba(0, 0, 0, 0.681);
+    /* ← ovo je zatamnjenje */
     z-index: 1;
 }
 
@@ -490,31 +513,31 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 1.5rem;
-    
+
 }
 
 @media (max-width: 768px) {
     .industries-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin:0 1rem 2rem 1rem;
-    
+        margin: 0 1rem 2rem 1rem;
+
     }
-    
+
     .industry-card {
         padding: 1rem;
         margin: 0 1rem 0 1rem;
     }
-    
+
     .industry-card img {
         width: 48px;
         height: 48px;
     }
-    
+
     .industry-card h3 {
         font-size: 1.1rem;
     }
-    
+
     .industry-card p {
         font-size: 0.8rem;
     }
@@ -538,7 +561,7 @@ body {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    
+
 }
 
 .mobile-menu.active {
@@ -554,7 +577,7 @@ body {
     pointer-events: auto !important;
     transform: translateX(0%) !important;
     z-index: 99999 !important;
-    
+
 }
 
 .mobile-menu .mobile-nav {
@@ -594,7 +617,7 @@ body {
 
 .mobile-menu .mobile-social {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
     margin-top: 2rem;
     opacity: 0;
@@ -617,18 +640,19 @@ body {
     z-index: 1001;
     position: relative;
     margin-left: auto;
-    
+
 }
+
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .mobile-menu-toggle {
-  margin-left: auto;
-  order: 3;
+    margin-left: auto;
+    order: 3;
 }
 
 
@@ -658,7 +682,8 @@ body {
         pointer-events: none !important;
     }
 
-    .main-nav, .header-social {
+    .main-nav,
+    .header-social {
         display: none;
     }
 
@@ -678,8 +703,8 @@ body {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 }
-  
-  
+
+
 @media (max-width: 768px) {
     .hero {
         height: 100vh;
@@ -688,13 +713,14 @@ body {
         justify-content: center;
         text-align: center;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url('../img/compressed/hero-image-pro-mob.webp') center/cover;
+            url('../img/compressed/hero-image-pro-mob.webp') center/cover;
     }
-    
+
     .hero-content {
         max-width: 800px;
         padding: 0 2rem;
     }
+
     .hero h1 {
         font-size: 2rem !important;
         background: none !important;
@@ -702,7 +728,8 @@ body {
         -webkit-text-fill-color: #fff !important;
         text-align: center;
         font-weight: 600;
-      }
+    }
+
     .hero p {
         font-size: 2rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -715,7 +742,7 @@ body {
     .mobile-menu {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: none;
     }
@@ -757,11 +784,13 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.453), rgba(0, 0, 0, 0.7)),
-                url('../img/compressed/hero-image-pro.webp') center/cover;
+        url('../img/compressed/hero-image-pro.webp') center/cover;
 }
+
 .hero-lcp-fix {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     opacity: 0;
@@ -872,7 +901,7 @@ body {
     left: 0;
     right: 0;
     padding: 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: #fff;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -895,12 +924,13 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
     .services-grid,
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .service-card,
     .gallery-item {
         margin-bottom: 20px;
@@ -1105,15 +1135,14 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .form-container {
-    }
-    
+    .form-container {}
+
     .book-now-btn {
         bottom: 10px;
         padding: 10px 20px;
         font-size: 14px;
     }
-    
+
     .mega-menu {
         display: none !important;
     }
@@ -1353,7 +1382,7 @@ body {
 .social-icons {
     font-size: x-large;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1380,26 +1409,40 @@ body {
     }
 
     .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        max-width: 200px;
+        /* prilagodi po potrebi */
+        margin: 0 auto;
+    }
+
+    .social-icons a {
+        flex: 0 0 calc(33.3% - 10px);
+        /* 2 po redu sa razmakom */
+        display: flex;
         justify-content: center;
     }
-} 
+
+}
 
 .form-message {
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  background: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    background: none;
 }
 
 .form-message.success {
-  background-color: rgba(40, 167, 69, 0.15);
-  color: #28a745;
+    background-color: rgba(40, 167, 69, 0.15);
+    color: #28a745;
 }
 
 .form-message.error {
-  background-color: rgba(220, 53, 69, 0.15);
-  color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.15);
+    color: #dc3545;
 }
