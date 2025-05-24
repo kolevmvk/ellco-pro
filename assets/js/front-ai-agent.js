@@ -209,11 +209,14 @@ window.addEventListener('load', () => {
     async function handleUserInput(value) {
       if (isTyping) return;
       addMessage(value, true);
+
       const step = steps[currentStep];
-      userData[step.type] = value;
+      userData[step.question] = value; // ← ispravljeno: koristi pitanje kao ključ
+
       showTypingIndicator();
       await new Promise(resolve => setTimeout(resolve, 1500));
       hideTypingIndicator();
+
       currentStep++;
       if (currentStep < steps.length) {
         addMessage(steps[currentStep].question);
@@ -227,6 +230,7 @@ window.addEventListener('load', () => {
         userReplyContainer.appendChild(sendButton);
       }
     }
+
 
     function generateRecommendation(data) {
       let recommendation = 'Na osnovu vaših odgovora, preporučujem:\n\n';
