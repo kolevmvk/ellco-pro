@@ -1,7 +1,7 @@
 {
   "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" },
-    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "api/*.cjs", "use": "@vercel/node" },
+    { "src": "**/*.html", "use": "@vercel/static" },
     { "src": "assets/**", "use": "@vercel/static" }
   ],
   "routes": [
