@@ -1,8 +1,14 @@
 module.exports = async (req, res) => {
   // ✅ CORS headeri
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const allowedOrigins = ['https://www.ellco.pro', 'https://api.ellco.pro'];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
 
   // ✅ Obrada preflight zahteva
   if (req.method === 'OPTIONS') {
