@@ -87,15 +87,15 @@ window.addEventListener('load', () => {
       userReplyContainer.appendChild(input);
       input.focus();
     }
-
     async function sendToAI(prompt) {
       showTyping();
       try {
-        const response = await fetch('/api/ai-agent', {
+        const response = await fetch('https://api.ellco.pro/api/ai-agent', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prompt })
         });
+
         const data = await response.json();
         addMessage(data.reply || 'AI nije odgovorio.');
       } catch (err) {
@@ -104,6 +104,7 @@ window.addEventListener('load', () => {
         hideTyping();
       }
     }
+
 
     function closePopup() {
       popup.classList.add('ai-hide');
