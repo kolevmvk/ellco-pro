@@ -372,38 +372,36 @@
     <!-- Main Content -->
     <main class="page-content">
         <div class="container">
-            <div class="form-container">
-                <h1>Kontaktirajte nas</h1>
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Ime i prezime</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon</label>
-                        <input type="tel" id="phone" name="phone" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Poruka</label>
-                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Pošalji poruku</button>
-                    <div id="formMessage" class="form-message"></div>
-                </form>
-                <!-- HONEYPOT: Nevidljivo polje za botove -->
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ime i prezime</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Poruka</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <!-- HONEYPOT i TOKEN UNUTRA -->
                 <div style="display: none;">
                     <label for="website">Ako ste robot, popunite ovo:</label>
                     <input type="text" id="website" name="website" autocomplete="off">
                 </div>
 
-                <!-- TOKEN: JS ga popunjava -->
                 <input type="hidden" id="formToken" name="formToken">
 
-            </div>
+                <button type="submit" class="btn-submit">Pošalji poruku</button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+
         </div>
     </main>
 
